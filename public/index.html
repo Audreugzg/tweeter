@@ -10,7 +10,13 @@
     type="text/css" />
 
   <!-- Bungee with the weight 400,Source Sans Pro, use weights 600 and 300 and also italic versions of each -->
-  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@1,300;1,600&display=swap"rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@1,300;1,600&display=swap"
+    rel="stylesheet" />
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- App CSS -->
   <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -26,7 +32,11 @@
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <span id = "logo">tweeter</span>
+    <span id="logo">tweeter</span>
+    <div class="nav_right"><span><b>Write</b> a new tweet</span>
+      <i id="down_arrow" class="fa-solid fa-angles-down"></i>
+    </div>
+
   </nav>
   <!-- Page-specific (main) content here -->
   <main class="container"></main>
