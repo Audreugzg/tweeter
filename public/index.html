@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -41,7 +42,7 @@
     </div>
 
   </nav>
-  <header>
+  <header class="top_header">
     <div class="avatar">
       <img src="/images/profile-hex.png">
     </div>
@@ -60,12 +61,64 @@
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
         <div class="form_footer">
-          <button class= "form_button" type="submit">Tweet</button>
+          <button class="form_button" type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
     </section>
+
+    <article class="tweet">
+      <header>
+        <div class="user">
+        <img src="https://avatars.dicebear.com/api/human/:seed.svg">
+        <p>Newton</p>
+        </div>
+        <div>
+          <p>@username</p>
+        </div>
+        
+        
+      </header>
+      <main>
+        <p>
+          If I have seen furthur it is by standing on the shoulders of gaints
+        </p>
+      </main>
+      <footer>
+        <div>
+          <p>10 days ago</p>
+        </div>
+        <div class="symbol"><i class="fa-solid fa-flag"></i><i class="fa-solid fa-repeat"></i><i class="fa-solid fa-heart"></i></div>
+      </footer>
+    </article>
+
+    <article class="tweet">
+      <header>
+        <div class="user">
+        <img src="https://avatars.dicebear.com/api/human/:seed.svg">
+        <p>Newton</p>
+        </div>
+        <div>
+          <p>@username</p>
+        </div>
+        
+        
+      </header>
+      <main>
+        <p>
+          If I have seen furthur it is by standing on the shoulders of gaints
+        </p>
+      </main>
+      <footer>
+        <div>
+          <p>10 days ago</p>
+        </div>
+        <div class="symbol"><i class="fa-solid fa-flag"></i><i class="fa-solid fa-repeat"></i><i class="fa-solid fa-heart"></i></div>
+      </footer>
+    </article>
   </main>
+
+
 </body>
 
 </html>

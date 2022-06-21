@@ -1,0 +1,58 @@
+.tweet{
+  width: 100%;
+  margin-top: 30px;
+  background-color: aliceblue;
+  padding-left: 2%;
+  padding-right: 2%;
+  border: 2px solid black;
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #96a7fa;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-geometric.png");
+}
+
+.tweet:hover {
+  box-shadow: 15px 15px 5px 2px rgba(15, 0, 20, 0.75);
+}
+.tweet header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.tweet .user{
+  display: flex;
+  flex-direction: row;
+}
+.tweet main {
+  width: 100%;
+  border-bottom: 3px solid black;
+  
+  
+}
+.tweet footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+.tweet footer .symbol{
+  letter-spacing: 1em;
+  color: #4056A1;
+}
+
+i:hover{
+  color: palegreen;
+}
+
+.tweet header p img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
