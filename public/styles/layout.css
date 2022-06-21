@@ -16,7 +16,8 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #deb887;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -30,5 +31,10 @@ body {
 
  }
 
+.container{
+  width: 90%;
+  margin:0 5%;
+  
 
+}
 
