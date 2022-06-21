@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -16,8 +19,9 @@ html {
 
 body {
   color: #545149;
-  background-color: #deb887;
-  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+
+  background-color: #96a7fa;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-geometric.png");
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -26,15 +30,14 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- #logo {
+#logo {
   font-family: 'Bungee', cursive;
-
- }
-
-.container{
-  width: 90%;
-  margin:0 5%;
-  
 
 }
 
+.container {
+  width: 90%;
+  margin: 0 5%;
+
+
+}
