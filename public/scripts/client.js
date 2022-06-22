@@ -3,6 +3,28 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+const load = function () {
+  $.ajax({
+    method: "GET",
+    url: "http://localhost:8080/tweets",
+  }).then(function (tweet) {
+    renderTweets(tweet);
+    //resets the form
+    document.querySelector(".form").reset();
+  });
+};
+
+// $(".form").submit(function (event){
+//   event.preventDefault();
+//   // const newTweet = event.target[0].value;
+//   $.ajax({
+//     method: "POST",
+//     url: "http://localhost:8080/tweets",
+//     data: $(this).serialize()
+//   }).then(function () {
+//     load();
+//   });
+// });
 
 const renderTweets = function(tweets) {
   // loops through tweets
@@ -45,6 +67,11 @@ const createTweetElement = function(obj){
 
 };
 
+
+
+
+
+
 // Test / driver code (temporary). Eventually will get this from the server.
 const data = [
   {
@@ -69,8 +96,22 @@ const data = [
     },
     "created_at": 1461113959088
   }
-]
+];
+
+
 
 $(document).ready(() => {
-  renderTweets(data);// to add it to the page so we can make sure it's got all the right elements, classes, etc.
+  load();
+  $(".form").submit(function (event){
+    event.preventDefault();
+    // const newTweet = event.target[0].value;
+    $.ajax({
+      method: "POST",
+      url: "http://localhost:8080/tweets",
+      data: $(this).serialize()
+    }).then(function () {
+      load();
+    });
+    $('.counter').text(140);
+  });// to add it to the page so we can make sure it's got all the right elements, classes, etc.
 });
