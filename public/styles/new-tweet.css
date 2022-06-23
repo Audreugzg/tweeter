@@ -32,3 +32,14 @@
   color: red;
 
 }
+
+.error {
+  display: none;
+  margin: auto;
+  margin-top: 2rem;
+  border:2px groove darkred;
+  min-height: 3rem;
+  text-align: center;
+  color: darkred;
+  font-weight: bolder;
+}

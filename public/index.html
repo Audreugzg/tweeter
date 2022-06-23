@@ -27,6 +27,7 @@
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
@@ -55,6 +56,8 @@
   </header>
   <!-- Page-specific (main) content here -->
   <main class="container">
+    <div class = "error">
+    </div>
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
       <form method="post" action="/tweets/" class="form">
@@ -68,61 +71,11 @@
     </section>
 
     <section id="tweets_container">
-      <!-- <article class="tweet">
-        <header>
-          <div class="user">
-            <img src="https://avatars.dicebear.com/api/human/:seed.svg">
-            <p>Newton</p>
-          </div>
-          <div>
-            <p>@username</p>
-          </div>
 
-
-        </header>
-        <main>
-          <p>
-            If I have seen furthur it is by standing on the shoulders of gaints
-          </p>
-        </main>
-        <footer>
-          <div>
-            <p>10 days ago</p>
-          </div>
-          <div class="symbol"><i class="fa-solid fa-flag"></i><i class="fa-solid fa-repeat"></i><i
-              class="fa-solid fa-heart"></i></div>
-        </footer>
-      </article>
-
-      <article class="tweet">
-        <header>
-          <div class="user">
-            <img src="https://avatars.dicebear.com/api/human/:seed.svg">
-            <p>Newton</p>
-          </div>
-          <div>
-            <p>@username</p>
-          </div>
-
-
-        </header>
-        <main>
-          <p>
-            If I have seen furthur it is by standing on the shoulders of gaints
-          </p>
-        </main>
-        <footer>
-          <div>
-            <p>10 days ago</p>
-          </div>
-          <div class="symbol"><i class="fa-solid fa-flag"></i><i class="fa-solid fa-repeat"></i><i
-              class="fa-solid fa-heart"></i></div>
-        </footer>
-      </article> -->
     </section>
   </main>
 
- 
+
 </body>
 
 </html>
