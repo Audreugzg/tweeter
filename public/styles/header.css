@@ -28,3 +28,26 @@
   position: relative;
   top: 10%;
 }
+
+
+@media only screen and (min-width: 1024px) {
+  
+  .top_header {
+    height: 400px;
+    width:90%;
+    position: sticky;
+    top: 30%;
+    margin-left: 2em;
+    border-radius: 20px;
+    
+    
+  }
+  .avatar {
+    top:10%;
+  }
+
+  .name {
+    top: 0px;
+  }
+
+}
