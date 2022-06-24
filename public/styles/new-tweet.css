@@ -4,16 +4,20 @@
 
 #tweet-text {
   width: 100%;
-  height: 1.5em;
+  /* height: 1.5em; */
   outline: none;
   resize: none;
-  white-space: nowrap;
+  white-space: wrap;
   /* overflow-x: scroll; */
   border-color: transparent;
   border-bottom: 3px solid black;
   /* background-color: #96a7fa; */
   background-color: #96a7fa;
   background-image: url("https://www.transparenttextures.com/patterns/dark-geometric.png");
+}
+
+textarea::placeholder {
+  color: black;
 }
 
 .form_footer {
